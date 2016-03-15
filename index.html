@@ -1,13 +1,18 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <head>
     <link rel="stylesheet" href="build/css/vendor.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title>Template</title>
-  </head>
+    <title>Weather</title>
   </head>
   <body>
+    <div class="container">
+      <h1>Get Weather Conditions From Anywhere!</h1>
+      <label for="location">Enter a location:</label>
+      <input id="location" type="text">
+      <button class="btn-success" id="humidityLocation">Get Current Humidity!</button>
+      <button class="btn-success" id="tempLocation">Get Current Temperature!</button>
+      <div class="showWeather"></div>
+    </div>
   </body>
 </html>
