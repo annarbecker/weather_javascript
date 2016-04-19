@@ -1,85 +1,56 @@
-## How to Set Up a Javascript Project
+##Weather API 
 
-* install node, visit
-[Node.js website](https://nodejs.org/en/download/)
-* install Node tools from command line
+#### Website to view current weather
+
+#### By Anna Becker & Charlie Carter
+
+## Description
+ A website where the user can enter a location and see the current weather
+
+## Setup/Installation Requirements
+
+Clone this repository. Open terminal and:
+
+```
+$ cd ~/Desktop
+$ git clone https://github.com/annarbeckerweather_javascript.git
+$ cd weather_javascript
+```
+
+Install Node tools
 ```
 $ npm init
+$ npm install
 ```
-* if using prompt - install it!
+Install Bower tools
 ```
-$ npm install prompt --save
-```
-* require prompt in cli.js
-```
-var prompt = require('prompt');
-prompt.start();
-```
-* browserify
- ```
-$ npm install browserify --save-dev
-$ npm install browserify -g
-```
-* install gulp
-```
-$ npm install gulp --save-dev
-$ npm install gulp -g
-```
-* install vinyl source stream
-```
-$ npm install vinyl-source-stream --save-dev
-```
-* install gulp minification
-```
-var uglify = require('gulp-uglify');
-```
-* install environments
-```
-$ npm install gulp-util --save-dev
-```
-* install delete
-```
-$ npm install del --save-dev
-```
-* install JSHint
-```
-$ npm install jshint --save-dev
-$ npm install gulp-jshint --save-dev
-```
-* build
-```
-$ gulp build
-```
-* bower
-```
-$ npm install bower -g
 $ bower init
-```
-* jQuery
-```
-$ bower install jquery --save
 $ bower install
 ```
-* Bootstrap
-```
-$ bower install bootstrap --save
-```
-* Moment.js
-```
-$ bower install moment --save
-```
-* Bower-files - combine front end dependencies  
-```
-$ npm install bower-files --save-dev
-```
-* We have created a task in gulpfile.js
-```
-gulp.task('bower', ['bowerJS', 'bowerCSS']);
-```
-we can now run with ``gulp bower`` any time we add a bower dependency.
 
-* BrowserSync
+Install SASS
 ```
-$ npm install browser-sync --save-dev
+$ gem install sass
 ```
-*  Now we can run ``gulp serve`` from the top level of our project directory to launch our server and run the app.
+
+To view in browser
+```
+$ gulp build
+$ gulp serve
+```
+
+## Technologies Used
+
+JavaScript, jQuery, Gulp, Bower, SCSS, moment.js
+
+### License
+
+This software is licensed under the MIT license.
+
+Copyright (c) 2016 Anna Becker & Charlie Carter
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
